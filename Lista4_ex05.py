@@ -1,0 +1,14 @@
+numero = int(input("Digite um número: "))
+divisores = []
+
+def perfeito(numero):
+    for i in range(1,numero):
+        if numero % i == 0:
+            divisores.append(i)    
+    soma = sum(divisores)
+    if soma == numero:
+        print("O número é perfeito")
+    else:
+        print("O número não é perfeito")
+
+perfeito(numero)
